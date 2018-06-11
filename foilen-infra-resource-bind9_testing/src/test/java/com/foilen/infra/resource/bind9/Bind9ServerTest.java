@@ -22,8 +22,6 @@ import com.foilen.infra.plugin.v1.core.context.ChangesContext;
 import com.foilen.infra.plugin.v1.model.base.IPApplicationDefinition;
 import com.foilen.infra.plugin.v1.model.resource.LinkTypeConstants;
 import com.foilen.infra.resource.application.Application;
-import com.foilen.infra.resource.bind9.Bind9Server;
-import com.foilen.infra.resource.bind9.Bind9ServerEditor;
 import com.foilen.infra.resource.machine.Machine;
 import com.foilen.infra.resource.unixuser.UnixUser;
 import com.foilen.smalltools.tools.JsonTools;
@@ -35,7 +33,7 @@ public class Bind9ServerTest extends AbstractIPPluginTest {
 
         // Create resources
         Machine machine = new Machine("h1.example.com", "192.168.0.200");
-        UnixUser unixUser = new UnixUser(2000, "infra-bind", "/home/infra-bind", null, null);
+        UnixUser unixUser = new UnixUser(2000L, "infra-bind", "/home/infra-bind", null, null);
 
         Bind9Server bind9Server = new Bind9Server();
         bind9Server.setAdminEmail("admin@example.com");
