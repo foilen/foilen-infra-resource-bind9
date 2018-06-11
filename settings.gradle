@@ -1,0 +1,2 @@
+include 'foilen-infra-resource-bind9'
+include 'foilen-infra-resource-bind9_testing'
