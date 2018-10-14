@@ -33,6 +33,8 @@ import com.foilen.infra.resource.unixuser.UnixUser;
  */
 public class Bind9Server extends AbstractIPResource {
 
+    public static final String RESOURCE_TYPE = "Bind9 Server";
+
     public static final String PROPERTY_NAME = "name";
     public static final String PROPERTY_PORT = "port";
     public static final String PROPERTY_NS_DOMAIN_NAMES = "nsDomainNames";

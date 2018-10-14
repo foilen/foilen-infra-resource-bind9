@@ -15,8 +15,6 @@ import org.junit.Assert;
 import org.junit.Test;
 
 import com.foilen.infra.plugin.v1.model.base.IPApplicationDefinitionAssetsBundle;
-import com.foilen.infra.resource.bind9.service.Bind9ServiceImpl;
-import com.foilen.infra.resource.bind9.service.BindEntry;
 import com.foilen.smalltools.tools.JsonTools;
 import com.foilen.smalltools.tools.ResourceTools;
 import com.foilen.smalltools.tuple.Tuple2;

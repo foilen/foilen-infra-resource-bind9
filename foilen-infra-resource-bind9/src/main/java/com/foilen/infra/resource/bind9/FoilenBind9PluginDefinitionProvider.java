@@ -22,7 +22,7 @@ public class FoilenBind9PluginDefinitionProvider implements IPPluginDefinitionPr
     public IPPluginDefinitionV1 getIPPluginDefinition() {
         IPPluginDefinitionV1 pluginDefinition = new IPPluginDefinitionV1("Foilen", "DNS - Bind9", "A Bind9 DNS server that uses all the DnsEntries", "1.0.0");
 
-        pluginDefinition.addCustomResource(Bind9Server.class, "Bind9 Server", //
+        pluginDefinition.addCustomResource(Bind9Server.class, Bind9Server.RESOURCE_TYPE, //
                 Arrays.asList(Bind9Server.PROPERTY_NAME), //
                 Collections.emptyList());
 
